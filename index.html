@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify - Kerolayne & Rian</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="./assets/heart.png" />
+</head>
+
+<body>
+  <div class="player">
+
+    <div class="footer-dots" id="open-spotify" style="cursor:pointer;">⋮</div>
+    <div class="favorite" id="favorite">&#10084;</div>
+
+    <div class="header">Kerolayne & Rian</div>
+
+    <div class="album-art">
+      <img src="./assets/casal.png" alt="Foto do casal" />
+    </div>
+
+    <div class="song-info">
+      <div class="song-title animate-text" id="song-title">Quando Bate Aquela Saudade</div>
+      <div class="artist-name animate-text" id="artist-name">Rubel</div>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-time" id="current-time">0:00</div>
+      <input type="range" id="progress" min="0" max="100" value="0" />
+      <div class="progress-time" id="duration">0:00</div>
+    </div>
+
+    <div class="controls">
+      <button id="shuffle" title="Shuffle">&#128256;</button>
+      <button id="prev" title="Anterior">&#9664;&#9664;</button>
+      <button id="play" class="play-btn" title="Play">&#9654;</button>
+      <button id="next" title="Próximo">&#9654;&#9654;</button>
+      <button id="repeat" title="Repetir">&#128257;</button>
+    </div>
+
+    <div class="spotify-code animate-code">
+      <img src="./assets/spotify-code.svg" alt="Spotify Code" />
+    </div>
+
+    <audio id="audio" src="./assets/Rubel - Quando Bate Aquela Saudade.mp3"></audio>
+
+    <div id="love-timer">
+      <br />Juntos há <span id="timeTogether"></span>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
