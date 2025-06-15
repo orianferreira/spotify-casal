@@ -196,7 +196,7 @@ function musicaAnterior() {
 }
 
 function atualizarRelogioAmor() {
-  const inicio = new Date('2022-08-06T00:00:00');
+  const inicio = new Date('2022-09-06T00:00:00');
   const agora = new Date();
   let diff = Math.floor((agora - inicio) / 1000);
 
